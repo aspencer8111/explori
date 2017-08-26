@@ -1,17 +1,19 @@
-import React, { Component } from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import FacebookLogin from 'react-facebook-login';
 
-export default class Facebook extends Component
-{
-  constructor(props) {
-    super(props)
+export default class Facebook extends React.Component {
+  responseFacebook(response) {
+    console.log(response)
   }
 
   render() {
     return (
-      <div>
-      <Link to='' />
-      </div>
+      <FacebookLogin
+        appId="1088597931155576"
+        autoLoad={true}
+        fields="name,email,picture"
+        callback={this.responseFacebook}
+      />
     )
   }
 }
