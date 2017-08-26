@@ -18,6 +18,29 @@ body {
   width: 30%;
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 1.7em;
+  margin-bottom: 0;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+/*.whiteBox {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}*/
+
+.flexWrap {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
   margin: 40vh;
   width: 50%;
@@ -32,8 +55,9 @@ body {
   padding: 40px 0;
 }
 
-a, a:visited {
-  color: #00958A;
+a,
+a:visited {
+  color: #00958a;
   font-weight: 700;
   text-decoration: none;
 }
@@ -48,7 +72,7 @@ a:hover {
 
 button {
   border-radius: 100%;
-  background-color: #00958A;
+  background-color: #00958a;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -72,5 +96,5 @@ button:hover {
 }
 
 .active {
-  border-bottom: 2px solid #00958A;
+  border-bottom: 2px solid #00958a;
 }
