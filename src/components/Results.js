@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
 
-export default class Privacy extends Component {
+export default class Results extends Component {
   render() {
     return (
       <div>
-      this is our privacy policy
+        These are your results
       </div>
     )
   }

@@ -11,7 +11,13 @@ export default class Home extends Component
   render() {
     return (
       <div>
-      this is the home
+      <h1>Logo</h1>
+      <form>
+        <input type="text" placeholder="Facebook Login" />
+        <Link to="/loading">
+        <input type="submit" value="Login" />
+        </Link>
+      </form>
       </div>
     )
   }
