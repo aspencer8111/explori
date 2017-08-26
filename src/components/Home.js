@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/App.css'
 import {Link} from 'react-router-dom'
+import logo from '../imgs/Explorius-Logo.png'
 
 export default class Home extends Component
 {
@@ -10,12 +11,14 @@ export default class Home extends Component
 
   render() {
     return (
-      <div>
-      <h1>Logo</h1>
+      <div className="home">
+      <img src={logo} alt="" />
+      <h2>Book your excursrions</h2>
+      <h4>Log in for your customized cruise experience</h4>
       <form>
-        <input type="text" placeholder="Facebook Login" />
+        <button value="Facebook" />
         <Link to="/loading">
-        <input type="submit" value="Login" />
+        <input type="submit" value="Let's Go" />
         </Link>
       </form>
       </div>

@@ -15,7 +15,6 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 ReactDOM.render(
   <BrowserRouter>
   <BaseLayout>
-    <NavBar />
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
