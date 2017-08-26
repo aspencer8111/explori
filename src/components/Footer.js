@@ -5,12 +5,7 @@ import { Link } from 'react-router-dom'
 export default class BaseLayout extends Component {
   render() {
     return (
-      <div className="App">
-        <div>
-      {this.props.children}
-    </div>
-    
-      </div>
-    );
-  }
-}
+<footer className="footer">
+    <Link to="/privacy">Privacy Policy</Link>
+</footer>
+)}}

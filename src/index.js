@@ -11,6 +11,7 @@ import Results from './components/Results';
 import Contact from './components/Contact'
 import Cruise from './components/Cruise'
 import Facebook from './components/Facebook'
+import Footer from './components/Footer'
 import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
