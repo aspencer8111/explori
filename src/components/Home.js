@@ -13,14 +13,12 @@ export default class Home extends Component {
     return (
       <div className="home">
         <img src={logo} alt="" id="logo" />
-        <h2>Book your excursions.</h2>
-        <h4>LOG IN FOR YOUR CUSTOMIZED CRUISE EXPERIENCE</h4>
+        <h2>Start Customizing Your Cruise</h2>
+        <h4>Log in for your customized cruise experience</h4>
         <form>
           <Facebook />
-          <Link to="/loading">
-            <div className="submitButton">
-              <input type="submit" value="Let's Go" />
-            </div>
+          <Link to="/results">
+            <input type="submit" value="Let's Go" />
           </Link>
         </form>
       </div>
