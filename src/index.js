@@ -11,6 +11,7 @@ import Contact from './components/Contact'
 import Cruise from './components/Cruise'
 import Facebook from './components/Facebook'
 import HowItWorks from './components/HowItWorks'
+import TechDetails from './components/TechDetails'
 import registerServiceWorker from './registerServiceWorker'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
@@ -23,6 +24,7 @@ ReactDOM.render(
         <Route path="/contact" component={Contact} />
         <Route path="/facebook" component={Facebook} />
         <Route path="/howitworks" component={HowItWorks} />
+        <Route path="/techdetails" component={TechDetails} />
         <Route path="/cruise" component={Cruise} />
         <Route path="/loading" component={Loading} />
         <Route path="/privacy" component={Privacy} />

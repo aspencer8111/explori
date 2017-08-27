@@ -114,7 +114,7 @@ button {
 }
 
 button.bookNow {
-  background-color: white;
+  background-color: transparent;
   border: 3px solid #00958a;
   color: #00958a;
   width: 11em;

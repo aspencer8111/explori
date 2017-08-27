@@ -25,7 +25,7 @@ class HowItWorks extends Component {
             We analyze many data points to create an unforgettable stress-free vacation custom made just for you.
           </p>
           <h3 className="h3Works">
-            <strong>RELAX AND ENJOY YOUR BEST VACATION</strong>
+            <strong>RELAX & ENJOY YOUR BEST VACATION</strong>
           </h3>
           <p className="pWorks">
             We've hand selected the best excursions tailored to every individual traveler. From a well deserved siesta
