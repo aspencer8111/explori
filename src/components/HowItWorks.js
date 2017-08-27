@@ -38,11 +38,11 @@ class HowItWorks extends Component {
           </a> */}
 
           <div className="footerWrapper">
-            <div className="footer">
-              <a href="#" id="works">
+            <div className="footer" id="howWorksFooterId">
+              <a href="howitworks" id="works">
                 HOW IT WORKS
               </a>
-              <a href="#" id="privacy">
+              <a href="privacy" id="privacy">
                 PRIVACY POLICY
               </a>
             </div>
