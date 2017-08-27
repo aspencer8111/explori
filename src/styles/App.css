@@ -69,6 +69,18 @@ a#works {
   color: white;
 }
 
+a#technicalDetails {
+  color: white;
+  position: relative;
+  top: 78px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: flex-start;
+  margin-left: -33px;
+}
+
 .facebook {
   display: flex;
   justify-content: center;
@@ -99,6 +111,16 @@ button {
   height: 45px;
   font-weight: 600;
   font-size: 14px;
+}
+
+button.bookNow {
+  background-color: transparent;
+  border: 3px solid #00958a;
+  color: #00958a;
+  width: 11em;
+  opacity: 0.5;
+  margin-top: 9px;
+  /*only while the buttons are stacked will we need margin-top*/
 }
 
 .flexWrap {
@@ -142,6 +164,8 @@ button:hover {
   -moz-transition: background-color .3s ease-in-out;
   -o-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
+  color: white;
+  opacity: 1;
 }
 
 .login-section {
@@ -157,10 +181,10 @@ button:hover {
 .active {
   border-bottom: 2px solid #00958a;
 }
-
+/*
 .footerWrapper {
   display: flex;
-}
+}*/
 
 .footer {
   position: relative;
@@ -186,19 +210,56 @@ strong {
   font-weight: 700;
 }
 
-button.bookNow {
-  background-color: white;
-  border: 3px solid #00958a;
-  color: #00958a;
-  width: 11em;
-  opacity: 0.5;
-}
-
 button#learnMore {
   width: 11em;
+}
+
+div#techDetailsButton {
+  display: flex;
+  justify-content: center;
+}
+
+button#techDetails {
+  width: 15em;
 }
 
 .forFlexing {
   display: flex;
   flex-direction: column;
+}
+
+.worksBox {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.flexWrapperforWorks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  flex-direction: column;
+}
+
+p.pWorks {
+  border-top: 1px solid #999;
+  margin: 0;
+  padding-top: 9px;
+}
+
+h3.h3Works {
+  margin-right: 2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  padding-bottom: 6px;
+  padding-top: 17px;
+}
+
+form.formStyle {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 14px;
+  border-bottom: .5px solid #999;
+  margin-bottom: 1px;
 }
