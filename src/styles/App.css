@@ -197,6 +197,10 @@ button:hover {
   color: white;
 }
 
+div#howWorksFooterId {
+  top: 135px;
+}
+
 div#resultsWrap {
   padding: 40px;
 }
