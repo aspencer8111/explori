@@ -3,17 +3,18 @@ import FacebookLogin from 'react-facebook-login';
 
 export default class Facebook extends React.Component {
   responseFacebook(response) {
-    console.log(response)
+    this.setUser(response)
   }
 
   render() {
     return (
       <FacebookLogin
-        appId="308817092915937"
+        appId="113056656037429"
         autoLoad={true}
         redirectUri='http://localhost:3000'
-        fields="name,email,picture"
+        fields="name,email,picture,gender"
         callback={this.responseFacebook}
+        setUser={this.props.setUser}
       />
     )
   }

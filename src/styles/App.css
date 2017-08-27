@@ -34,10 +34,19 @@ h2 {
   margin-right: -33px;
 }
 
+h2#resultsH2 {
+  font-size: 1.8em;
+}
+
 h3 {
   margin-right: 2em;
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+h3#resultsH3 {
+  margin-right: 0;
+  font-size: 1em;
 }
 
 h4 {
@@ -162,4 +171,15 @@ button:hover {
   top: 116px;
   letter-spacing: 1px;
   color: white;
+}
+
+.resultsBox {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.iconClass {
+  display: flex;
+  justify-content: center;
 }
