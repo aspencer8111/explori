@@ -6,7 +6,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Privacy from './components/Privacy'
 import Loading from './components/Loading'
-import Results from './components/Results'
+import Results2 from './components/Results2'
 import Contact from './components/Contact'
 import Cruise from './components/Cruise'
 import Facebook from './components/Facebook'
@@ -28,7 +28,7 @@ ReactDOM.render(
         <Route path="/cruise" component={Cruise} />
         <Route path="/loading" component={Loading} />
         <Route path="/privacy" component={Privacy} />
-        <Route path="/results" component={Results} />
+        <Route path="/results" component={Results2} />
       </Switch>
     </BaseLayout>
   </BrowserRouter>,
