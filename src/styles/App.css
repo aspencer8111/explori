@@ -14,14 +14,19 @@ body {
 }
 
 #logo {
-  height: 30%;
-  width: 30%;
+  height: 41%;
+  width: 44%;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 1.7em;
+  font-size: 2.2em;
   margin-bottom: 0;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .submitButton {
@@ -30,11 +35,17 @@ h2 {
   padding-top: 30px;
 }
 
-/*.whiteBox {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-}*/
+input[type="submit"] {
+  background-color: #00958a;
+  color: white;
+  padding: 2px 6px 3px;
+  border-width: 0;
+  border-radius: 40px;
+  width: 135px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+}
 
 .flexWrap {
   display: flex;
@@ -43,7 +54,7 @@ h2 {
 
 .App {
   margin: 40vh;
-  width: 50%;
+  width: 35%;
   background-color: rgba(255, 255, 255, .6);
 }
 
