@@ -19,7 +19,7 @@ export default class Home extends Component {
           <Facebook />
           <Link to="/results">
             <div className="submitButton">
-              <input type="submit" value="Let's Go" />
+              <input type="submit" value="LET'S GO" />
             </div>
           </Link>
         </form>

@@ -30,11 +30,17 @@ h2 {
   padding-top: 30px;
 }
 
-/*.whiteBox {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-}*/
+input[type="submit"] {
+  background-color: #00958a;
+  color: white;
+  padding: 2px 6px 3px;
+  border-width: 0;
+  border-radius: 40px;
+  width: 135px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+}
 
 .flexWrap {
   display: flex;
