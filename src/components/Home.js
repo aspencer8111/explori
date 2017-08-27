@@ -26,6 +26,12 @@ export default class Home extends Component {
             </h3>
           </div>
         </div>
+        <div className="footerWrapper">
+          <div className="footer">
+            <h4 id="works">HOW IT WORKS</h4>
+            <h4 id="privacy">PRIVACY POLICY</h4>
+          </div>
+        </div>
         <form>
           {/* <Facebook /> */}
           <Link to="/results">
