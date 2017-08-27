@@ -202,3 +202,30 @@ button#learnMore {
   display: flex;
   flex-direction: column;
 }
+
+.worksBox {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.flexWrapperforWorks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  flex-direction: column;
+}
+
+p.pWorks {
+  border-top: 1px solid #999;
+  margin: 0;
+  padding-top: 9px;
+}
+
+h3.h3Works {
+  margin-right: 2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+  padding-bottom: 6px;
+}
