@@ -14,14 +14,19 @@ body {
 }
 
 #logo {
-  height: 30%;
-  width: 30%;
+  height: 41%;
+  width: 44%;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 1.7em;
+  font-size: 2.2em;
   margin-bottom: 0;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .submitButton {
