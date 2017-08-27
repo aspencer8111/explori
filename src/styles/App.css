@@ -175,10 +175,7 @@ a:hover {
 }
 
 .excursion-content-box {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  padding: 0;
 }
 
 .excursion-content-box button {
@@ -188,7 +185,19 @@ a:hover {
   margin-top: 10px;
 }
 
-.header-excursion {
+.button-box-book button {
+  text-align: left;
+}
+
+.button-box-book {
+  text-align: left;
+}
+
+.large-pic {
+  width: 300%;
+}
+
+/*.header-excursion {
   width: 100%;
   background-image: url('/imgs/ocean-background-1.jpg');
   padding: 20px;
@@ -201,9 +210,9 @@ a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
-}
+}*/
 
-.header-excursion::before {
+/*.header-excursion::before {
   content: '';
   position: absolute;
   top: 0;
@@ -212,6 +221,11 @@ a:hover {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: -1;
+}*/
+
+.header-excursion h3 {
+  font-weight: 700;
+  padding-top: 10px;
 }
 
 .meta {
@@ -221,8 +235,7 @@ a:hover {
 }
 
 .p-content {
-  width: 80%;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 .how-wrapper {
@@ -230,6 +243,12 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+button a,
+button a:hover,
+button a:visited {
+  color: #fff;
 }
 
 .how {
@@ -417,7 +436,7 @@ a#techDetails:hover {
 button.bookNow {
   background-color: transparent;
   border: 3px solid #00958a;
-  color: #00958a;
+  /*color: #00958a;*/
   width: 11em;
   opacity: 0.5;
   margin-top: 9px;

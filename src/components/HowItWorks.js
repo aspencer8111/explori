@@ -50,7 +50,9 @@ class HowItWorks extends Component {
           </section>
         </div>
         <div className="tech-btn-box">
-          <button>Technical Details</button>
+          <a href="/techdetails">
+            <button>Technical Details</button>
+          </a>
         </div>
       </div>
     )

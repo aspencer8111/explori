@@ -24,15 +24,15 @@ img#loading {
 }
 
 img.resultsHeaderImg {
-    margin-left: 27%;
-    margin-top: 40px;
+  margin-left: 27%;
+  margin-top: 40px;
 }
 
-img.excursionPic {
+/*img.excursionPic {
   border: 5px solid #00958a;
   margin-left: 20px;
   margin-top: 20px;
-}
+}*/
 
 .center {
   text-align: center;

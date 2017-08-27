@@ -9,7 +9,7 @@ export default class BaseLayout extends Component {
         <header>
           <div className="nav">
             <div className="logo-container">
-              <a href="index.html">
+              <a href="/">
                 <img src={logo} className="logo" alt="Explorius Logo" />
               </a>
             </div>

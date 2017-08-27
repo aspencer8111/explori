@@ -4,7 +4,6 @@ import loading from '../imgs/loading.gif'
 import '../styles/App.css'
 import logo from '../imgs/Explorius-Logo.png'
 
-
 export default class Results extends Component {
   state = {
     data: []
@@ -48,66 +47,81 @@ export default class Results extends Component {
 
   componentDidMount() {
     let user = window.user
-    if(user === undefined){
+    if (user === undefined) {
       window.location = '/'
     }
     let data = []
-    this.props.getCustomExcursions(user.email, user.gender, user.id)
-              .then((json) => {
-                data = json;
-                this.setState({ data })
-              })
+    this.props.getCustomExcursions(user.email, user.gender, user.id).then(json => {
+      data = json
+      this.setState({ data })
+    })
   }
 
   render() {
     let exc = this.state.data.slice(0, 3).map(excursion => {
       return (
-          <div key={excursion.id}>
-            <section className="excursion">
-              <div className="excursion-content-box">
-                <img src={`https://dsc.cloud/AlexSpencerUploads/img${Math.floor(Math.random() * 12) + 1  }.jpg`} alt="" id="excursionPic" className="excursionPic" />
-                <div className="header-excursion">
-                  <h3>{excursion.title}</h3>
-                </div>
-                <div className="p-content">
-                  <p className="meta">
-                    <strong>Category:</strong> {excursion.categories[0]} <br />
-                    <strong>Price:</strong> {this.parsePriceRange(excursion.price)} <br />
-                    <strong>Activity Level:</strong> {this.parseActivity(excursion.activity_level)} <br />
-                    <strong>Duration:</strong>{this.parseDuration(excursion.duration)} <br />
-                  </p>
-                  <p>{excursion.desc}</p>
-                </div>
-                <br />
-                <div className="button-box">
-                  <a href={'http://www.carnival.com/' + excursion.uri} className='button'>Book Now</a>
-                </div>
+        <div key={excursion.id}>
+          <section className="excursion">
+            <div className="excursion-content-box">
+              <img
+                src={`https://dsc.cloud/AlexSpencerUploads/img${Math.floor(Math.random() * 12) + 1}.jpg`}
+                alt=""
+                id="excursionPic"
+                className="excursionPic"
+              />
+              <div className="header-excursion">
+                <h3>
+                  {excursion.title}
+                </h3>
               </div>
-            </section>
-            <br />
-            <hr />
-          </div>
+              <div className="p-content">
+                <p className="meta">
+                  <strong>Category:</strong> {excursion.categories[0]} <br />
+                  <strong>Price:</strong> {this.parsePriceRange(excursion.price)} <br />
+                  <strong>Activity Level:</strong> {this.parseActivity(excursion.activity_level)} <br />
+                  <strong>Duration:</strong>
+                  {this.parseDuration(excursion.duration)} <br />
+                </p>
+                <p>
+                  {excursion.desc}
+                </p>
+              </div>
+              <br />
+              <div className="button-box-book">
+                <button>
+                  <a href={'http://www.carnival.com/' + excursion.uri}>Book Now</a>
+                </button>
+              </div>
+            </div>
+          </section>
+          <br />
+          <hr />
+        </div>
       )
     })
     let divvy = (
       <div>
-        <header>
-          <img src={logo} alt="" id="logo" className='resultsHeaderImg'/>
-          <div className="jumbotron">
-            <h1 className='center'>Your <strong>Customized</strong> Excursions</h1>
-          </div>
-        </header>
         <div className="wrapper">
+          <div className="jumbotron">
+            <h1>
+              <strong>How It Works:</strong> The Basics
+            </h1>
+          </div>
           {exc}
         </div>
       </div>
     )
-    let loading = (
-      <img src={loading} />
-    )
+    let loading = <img src={loading} />
     return (
       <div>
-        {this.state.data.length === 0 ? <img src='https://dsc.cloud/AlexSpencerUploads/loading.gif' alt="loading" id="loading" className='loading' /> : divvy }
+        {this.state.data.length === 0
+          ? <img
+              src="https://dsc.cloud/AlexSpencerUploads/loading.gif"
+              alt="loading"
+              id="loading"
+              className="loading"
+            />
+          : divvy}
       </div>
     )
   }
