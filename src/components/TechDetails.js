@@ -49,10 +49,6 @@ class TechDetails extends Component {
         <div className="content-box">
           <h2>Preface</h2>
           <h3>The Problem</h3>
-          <div className="picture-box">
-            <iframe src="https://giphy.com/embed/CdY6WueirK8Te" width="480" height="211" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/CdY6WueirK8Te"></a>
-
-          </div>
           <p>While doing research at the beginning of the challenge, we found information suggesting that cruise ship profits were heavily impacted by cruise ship excursions. We felt like this was a high impact area that could be improved on using modern technology and a challenging problem to solve that we might be able to conquer in a weekend through creative solutions.
 </p>
 
