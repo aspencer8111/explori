@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/App.css'
 
-let url = 'https://cors-anywhere.herokuapp.com/http://www.explori.us/excursions.json'
-
 export default class Results extends Component {
   state = {
     data: []
@@ -20,12 +18,24 @@ export default class Results extends Component {
   }
 
   parsePriceRange(price_range) {
-    if (price_range == 1) {
+    if (price_range === 1) {
       return 'Less than $50'
-    } else if (price_range == 2) {
+    } else if (price_range === 2) {
       return '$50 to $100'
     } else {
       return 'more than $100'
+    }
+  }
+
+  parseActivity(activity_level) {
+    if (activity_level < 2) {
+      return 'Easy'
+    } else if (activity_level > 2 && activity_level <= 3) {
+      return 'Moderate'
+    } else if (activity_level > 3 && activity_level <= 4) {
+      return 'Difficult'
+    } else {
+      return 'Extreme'
     }
   }
 
@@ -48,70 +58,37 @@ export default class Results extends Component {
   render() {
     let exc = this.state.data.slice(0, 3).map(excursion => {
       return (
-        <div>
           <div key={excursion.id}>
-            <h3 id="resultsH3">
-              <strong>
-                {excursion.title}
-              </strong>
-            </h3>
-            {/* <p>
-              Activity Level: {excursion.activity_level}
-            </p>
-            <p>
-              Price Range: {this.parsePriceRange(excursion.price_range)}
-            </p>
-            <p>
-              Duration: {this.parseDuration(excursion.duration)}
-            </p> */}
-            {/* <p>
-              {excursion.desc}
-            </p> */}
-            <div className="forFlexing">
-              <form className="formStyle">
-                <Link to="/info">
-                  {/* <input
-                  className="facebook"
-                  type="button"
-                  onClick={this._submit}
-                  value="Learn More"
-                  name={excursion.id}
-                /> */}
-                  {/* <input type="button" value="Book Now" /> */}
-                  <button id="learnMore" onClick={this._submit} className="facebook" type="submit" name={excursion.id}>
-                    LEARN MORE
-                  </button>
-                  <button className="bookNow" type="submit">
-                    BOOK NOW
-                  </button>
-                </Link>
-              </form>
-            </div>
+            <section className="excursion">
+              <div className="excursion-content-box">
+                <div className="header-excursion">
+                  <h2>{excursion.title}</h2>
+                  <h3></h3>
+                </div>
+                <div className="p-content">
+                  <p className="meta"><strong>Category:</strong> {excursion.categories[0]} <strong>Price:</strong> {this.parsePriceRange(excursion.price)} <strong>Activity Level:</strong> {this.parseActivity(excursion.activity_level)} <strong>Duration:</strong>{this.parseDuration(excursion.duration)}</p>
+                  <p>{excursion.desc}</p>
+                </div>
+                <div className="button-box">
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </section>
           </div>
-        </div>
       )
     })
     return (
-      <div id="resultsWrap">
-        <div className="resultsBox">
-          <h1 className="iconClass">ICON HERE</h1>
-          {/* <img src={logo} alt="" id="logo" /> */}
-          <h2 id="resultsH2">
-            Start <strong>Customizing</strong> Your Cruise
-          </h2>
-          {exc}
-        </div>
-        <div className="footerWrapper">
-          <div className="footer">
-            <a href="#" id="works">
-              HOW IT WORKS
-            </a>
-            <a href="#" id="privacy">
-              PRIVACY POLICY
-            </a>
-          </div>
-        </div>
+  <div>
+    <header>
+      <div className="jumbotron">
+        <h1>Your <strong>Customized</strong> Excursions</h1>
       </div>
+    </header>
+
+    <div className="wrapper">
+      {exc}
+    </div>
+  </div>
     )
   }
 }
