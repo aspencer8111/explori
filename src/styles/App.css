@@ -29,13 +29,13 @@ h4 {
   font-size: 14px;
 }
 
-.submitButton {
+.facebook {
   display: flex;
   justify-content: center;
   padding-top: 30px;
 }
 
-input[type="submit"] {
+button {
   background-color: #00958a;
   color: white;
   padding: 2px 6px 3px;
@@ -79,13 +79,6 @@ a:hover {
   -moz-transition: color 200ms ease-in-out;
   -o-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
-}
-
-button {
-  border-radius: 100%;
-  background-color: #00958a;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 button:hover {

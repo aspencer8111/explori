@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../styles/App.css'
 import { Link } from 'react-router-dom'
 import logo from '../imgs/Explorius-Logo.png'
-import Facebook from './Facebook'
+// import Facebook from './Facebook'
 
 export default class Home extends Component {
   constructor(props) {
@@ -19,10 +19,12 @@ export default class Home extends Component {
           LOG IN FOR YOUR <strong>CUSTOMIZED</strong> CRUISE EXPERIENCE
         </h4>
         <form>
-          <Facebook />
+          {/* <Facebook /> */}
           <Link to="/results">
             <div className="submitButton">
-              <input type="submit" value="LET'S GO" />
+              <button className="facebook" type="submit">
+                LET'S GO <i className="fa fa-facebook-official" aria-hidden="true" />
+              </button>
             </div>
           </Link>
         </form>
