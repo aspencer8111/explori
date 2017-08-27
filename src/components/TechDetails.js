@@ -33,10 +33,10 @@ class TechDetails extends Component {
           </ol>
           <h4>Recommended Excursions:</h4>
           <ol>
-            <li>Excursion One</li>
-            <li>Excursion Two</li>
-            <li>Excursion Three</li>
-            <li>Excursion Four</li>
+            <li>Kayaking</li>
+            <li>Biking</li>
+            <li>Helicopter Ride</li>
+            <li>Zipline in Forest</li>
           </ol>
         </div>
       </section>
