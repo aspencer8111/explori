@@ -24,6 +24,20 @@ h2 {
   margin-bottom: 0;
 }
 
+.facebookText {
+  margin-right: 93px;
+  border-bottom: 2px solid #00958a;
+}
+
+.cruiseText {
+  margin-right: -33px;
+}
+
+h3 {
+  margin-right: 2em;
+  font-weight: 500;
+}
+
 h4 {
   font-weight: 500;
   font-size: 14px;
@@ -38,6 +52,14 @@ h4 {
 .fa {
   padding-left: 9px;
   margin-top: 1px;
+}
+
+.h3Wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: .5px solid #999;
+  margin: 0 0 75px 0;
+  height: 48px;
 }
 
 button {
