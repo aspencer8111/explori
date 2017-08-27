@@ -91,8 +91,10 @@ class TechDetails extends Component {
 <br/><br/>
 <h3>Our Architecture</h3>
 <p>The solution we settled on and built collected basic information through facebook and and used computer vision and natural language processing to expand that to a structured set of topics that represented items that were found in the text and image data. From those topics we then applied even more natural language processing to derive a set of categories that were matched against and used to train up a set of multinomial logistic regression models (a machine learning model that identifies patterns in data). This model was then deployed to amazon and used to power real-time predictions based on new users that started using the system.</p>
+<br/><br/>
 <h3>Excursion Data</h3>
 <p>We acquired excursion data by spidering several sources of cruise ship data online. This data was used to power to recommendations as well as help users in the survey application select responses.</p>
+<br/><br/>
 <h3>Training Data for Four Machine Learning Models</h3>
 <p>One of the very large problems we had was accumulating enough meaningful training data to make the machine learning model have any impact. Through the course of the competition we were able to collect hundreds of points of training data through a few creative means. We surveyed hundred of english speaking users from all over the world, ran our computer vision and natural language processing on their profile photo and social media data, and collected their preferences for cruise ship excursions. We used all of that data to build several iterations on four models across four dimensions of data that ultimately were used to compose the core part of our machine learning algorithm.</p>
 
