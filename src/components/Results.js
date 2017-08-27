@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Info from './Info'
 
 let url = 'https://cors-anywhere.herokuapp.com/http://www.explori.us/excursions.json'
 
 export default class Results extends Component {
-  constructor(props) {
-    super(props)
-  }
   state = {
     data: []
   }

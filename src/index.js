@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
 import BaseLayout from './components/BaseLayout';
-import NavBar from './components/NavBar';
 import Home from './components/Home';
 import About from './components/About';
 import Privacy from './components/Privacy';
@@ -11,7 +10,6 @@ import Results from './components/Results';
 import Contact from './components/Contact'
 import Cruise from './components/Cruise'
 import Facebook from './components/Facebook'
-import Footer from './components/Footer'
 import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
