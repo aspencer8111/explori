@@ -5,9 +5,6 @@ import logo from '../imgs/Explorius-Logo.png'
 // import Facebook from './Facebook'
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     return (
