@@ -48,17 +48,7 @@ export default class Home extends Component {
             </a>
           </div>
         </div>
-        <form>
-          {/* <Facebook /> */}
-          <Link to="/results">
-            <div className="submitButton">
-              <button className="facebook" type="submit">
-                LET'S GO <i className="fa fa-facebook-official" aria-hidden="true" />
-              </button>
-            </div>
-          </Link>
-        </form>
-        {Object.keys(this.state.user).length === 0 ? <Facebook setUser={this.setUser} /> : <Form />}
+        {this.state.user.email === undefined ? <Facebook setUser={this.setUser} /> : <Form />}
       </div>
     )
   }
