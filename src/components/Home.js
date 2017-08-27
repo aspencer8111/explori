@@ -12,13 +12,19 @@ export default class Home extends Component {
         {/* <h2>Start Customizing Your Cruise</h2> */}
         <h2>Book your excursions.</h2>
         <h4>
-          LOG IN FOR YOUR <strong>CUSTOMIZED</strong> CRUISE EXPERIENCE
+          LOG IN FOR YOUR <strong>CUSTOMIZED</strong> CRUISE EXPERIENCE.
         </h4>
         <div className="h3Wrapper">
-          <h3>
-            <i className="fa fa-facebook-official" aria-hidden="true" />FACEBOOK
-          </h3>
-          <h3>CRUISE</h3>
+          <div className="facebookText">
+            <h3>
+              <i className="fa fa-facebook-official" aria-hidden="true" /> FACEBOOK
+            </h3>
+          </div>
+          <div className="cruiseText">
+            <h3>
+              <i className="fa fa-ticket" aria-hidden="true" /> CRUISE
+            </h3>
+          </div>
         </div>
         <form>
           {/* <Facebook /> */}
