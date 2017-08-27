@@ -49,6 +49,9 @@ class HowItWorks extends Component {
             </div>
           </section>
         </div>
+        <div className="tech-btn-box">
+          <button>Technical Details</button>
+        </div>
       </div>
     )
   }

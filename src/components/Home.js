@@ -22,7 +22,7 @@ export default class Home extends Component {
     return (
       <div className="homebody">
         <div className="homebox">
-          {/* <img src={logo} alt="" id="logo" /> */}
+          <img src={logo} alt="" className="logo" />
           {/* <h2>Start Customizing Your Cruise</h2> */}
           <h2>Book your excursions.</h2>
           <h4>

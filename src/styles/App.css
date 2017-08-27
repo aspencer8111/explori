@@ -43,7 +43,7 @@ strong {
 }
 
 .wrapper {
-  width: 100%;
+  width: 95%;
   padding-top: 30px;
 }
 
@@ -118,7 +118,7 @@ header:before {
   justify-content: center;
   position: absolute;
   top: 150px;
-  left: 200px;
+  left: 240px;
 }
 
 .jumbotron h1 {
@@ -242,7 +242,12 @@ a:hover {
 
 .how h3 {
   font-weight: 700;
-  padding-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.homebox .logo {
+  width: 40%;
 }
 
 /*.how,
@@ -286,6 +291,12 @@ h2 {
   font-weight: 400;
   font-size: 2.2em;
   margin-bottom: 0;
+}
+
+.tech-btn-box {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
 }
 
 .facebookText {
@@ -419,11 +430,12 @@ button.bookNow {
 }
 
 .homebox {
-  margin: 30vh;
+  margin: 20vh;
   width: 35%;
   background-color: rgba(255, 255, 255, .6);
   box-shadow: 2px 2px 10px #666;
   padding: 20px;
+  height: 43vh;
   text-align: center;
 }
 
