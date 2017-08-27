@@ -87,6 +87,28 @@ a#technicalDetails {
   padding-top: 2px;
 }
 
+a#techDetails {
+  background-color: #00958a;
+  color: white;
+  padding: 2px 6px 3px;
+  border-width: 0;
+  border-radius: 40px;
+  width: 135px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+a#techDetails:hover {
+  background-color: #005852;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+  color: white;
+  opacity: 1;
+}
+
 .fa {
   padding-left: 9px;
   margin-top: 1px;

@@ -48,15 +48,19 @@ class HowItWorks extends Component {
             </div>
           </div>
           <div id="techDetailsButton">
-            <button
+            <a id="techDetails" href="techDetails">
+              TECHNICAL DETAILS
+            </a>
+
+            {/* <button
               id="techDetails"
               onClick={this._submit}
               className="facebook"
               type="submit"
               // name={excursion.id}
-            >
-              TECHNICAL DETAILS
-            </button>
+            > */}
+            {/* TECHNICAL DETAILS
+            </button> */}
           </div>
         </div>
       </div>
