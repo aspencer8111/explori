@@ -9,6 +9,11 @@ class TechDetails extends Component {
   render() {
     return (
       <div className="wrapper">
+        <div className="jumbotron">
+          <h1>
+            <strong>How It Works:</strong> Technically
+          </h1>
+        </div>
         <section className="step">
           <div className="picture-box">
             <img src={fbpic} alt="" />
@@ -39,7 +44,7 @@ class TechDetails extends Component {
             </ol>
           </div>
         </section>
-        <section className="step">
+        <section>
           <div className="content-box">
             <p>
               This project was created as part of the 2017 Hospitality Hackathon on the weekend of August 27th, 2017.
@@ -49,7 +54,7 @@ class TechDetails extends Component {
             </p>
           </div>
         </section>
-        <section className="step">
+        <section>
           <div className="content-box">
             <h2>Preface</h2>
             <h3>The Problem</h3>
