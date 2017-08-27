@@ -11,6 +11,7 @@ body {
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
 }
 
 #logo {
@@ -33,14 +34,39 @@ h2 {
   margin-right: -33px;
 }
 
+h2#resultsH2 {
+  font-size: 1.8em;
+}
+
 h3 {
   margin-right: 2em;
   font-weight: 500;
+  letter-spacing: 2px;
+}
+
+h3#resultsH3 {
+  margin-right: 0;
+  font-size: 1em;
 }
 
 h4 {
   font-weight: 500;
   font-size: 14px;
+}
+
+a {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+a#privacy {
+  margin-left: 120px;
+  color: white;
+}
+
+a#works {
+  margin-right: 120px;
+  color: white;
 }
 
 .facebook {
@@ -60,6 +86,7 @@ h4 {
   border-bottom: .5px solid #999;
   margin: 0 0 75px 0;
   height: 48px;
+  flex-direction: row;
 }
 
 button {
@@ -83,6 +110,7 @@ button {
   margin: 40vh;
   width: 35%;
   background-color: rgba(255, 255, 255, .6);
+  box-shadow: 2px 2px 10px #666;
 }
 
 .home {
@@ -109,11 +137,11 @@ a:hover {
 }
 
 button:hover {
-  color: #005852;
-  -webkit-transition: background-color 200ms ease-in-out;
-  -moz-transition: background-color 200ms ease-in-out;
-  -o-transition: background-color 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out;
+  background-color: #005852;
+  -webkit-transition: background-color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
 }
 
 .login-section {
@@ -128,4 +156,49 @@ button:hover {
 
 .active {
   border-bottom: 2px solid #00958a;
+}
+
+.footerWrapper {
+  display: flex;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  top: 116px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+div#resultsWrap {
+  padding: 40px;
+}
+
+.iconClass {
+  display: flex;
+  justify-content: center;
+}
+
+strong {
+  font-weight: 700;
+}
+
+button.bookNow {
+  background-color: white;
+  border: 3px solid #00958a;
+  color: #00958a;
+  width: 11em;
+  opacity: 0.5;
+}
+
+button#learnMore {
+  width: 11em;
+}
+
+.forFlexing {
+  display: flex;
+  flex-direction: column;
 }

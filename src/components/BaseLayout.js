@@ -6,9 +6,7 @@ export default class BaseLayout extends Component {
     return (
       <div className="flexWrap">
         <div className="App">
-          <div className="whiteBox">
-            {this.props.children}
-          </div>
+          {this.props.children}
         </div>
       </div>
     )

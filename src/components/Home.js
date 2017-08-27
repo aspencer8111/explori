@@ -2,9 +2,21 @@ import React, { Component } from 'react'
 import '../styles/App.css'
 import { Link } from 'react-router-dom'
 import logo from '../imgs/Explorius-Logo.png'
-// import Facebook from './Facebook'
+import Facebook from './Facebook'
+import Form from './Form'
 
 export default class Home extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      user: {}
+    }
+  }
+
+  setUser = user => {
+    this.setState({ user: user })
+  }
+
   render() {
     return (
       <div className="home">
@@ -26,6 +38,16 @@ export default class Home extends Component {
             </h3>
           </div>
         </div>
+        <div className="footerWrapper">
+          <div className="footer">
+            <a href="#" id="works">
+              HOW IT WORKS
+            </a>
+            <a href="#" id="privacy">
+              PRIVACY POLICY
+            </a>
+          </div>
+        </div>
         <form>
           {/* <Facebook /> */}
           <Link to="/results">
@@ -36,6 +58,7 @@ export default class Home extends Component {
             </div>
           </Link>
         </form>
+        {Object.keys(this.state.user).length === 0 ? <Facebook setUser={this.setUser} /> : <Form />}
       </div>
     )
   }
