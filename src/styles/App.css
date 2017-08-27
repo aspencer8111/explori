@@ -267,3 +267,17 @@ form.formStyle {
   border-bottom: .5px solid #999;
   margin-bottom: 1px;
 }
+
+div#privacyPage {
+  padding: 40px;
+}
+
+#privacyFooter {
+  position: relative;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  letter-spacing: 1px;
+  color: white;
+}

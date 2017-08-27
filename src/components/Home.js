@@ -41,10 +41,10 @@ export default class Home extends Component {
         </div>
         <div className="footerWrapper">
           <div className="footer">
-            <a href="#" id="works">
+            <a href="howitworks" id="works">
               HOW IT WORKS
             </a>
-            <a href="#" id="privacy">
+            <a href="privacy" id="privacy">
               PRIVACY POLICY
             </a>
           </div>
