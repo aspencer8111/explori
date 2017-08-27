@@ -14,6 +14,7 @@ class TechDetails extends Component {
             <strong>How It Works:</strong> Technically
           </h1>
         </div>
+<<<<<<< HEAD
         <section className="step">
           <div className="picture-box">
             <img src={fbpic} alt="" />
@@ -75,6 +76,15 @@ class TechDetails extends Component {
               could be improved on using modern technology and a challenging problem to solve that we might be able to
               conquer in a weekend through creative solutions.
             </p>
+=======
+      </section>
+      <section className="step">
+        <div className="content-box">
+          <h2>Preface</h2>
+          <h3>The Problem</h3>
+          <p>While doing research at the beginning of the challenge, we found information suggesting that cruise ship profits were heavily impacted by cruise ship excursions. We felt like this was a high impact area that could be improved on using modern technology and a challenging problem to solve that we might be able to conquer in a weekend through creative solutions.
+</p>
+>>>>>>> 8f1c827246b8491912262831b34fe3125cb2f44a
 
             <br />
             <br />
@@ -127,6 +137,7 @@ class TechDetails extends Component {
               ended up creating surpassed our wildest ambitions.
             </p>
           </div>
+<<<<<<< HEAD
         </section>
         <section className="step">
           <div className="content-box">
@@ -176,6 +187,19 @@ class TechDetails extends Component {
               build several iterations on four models across four dimensions of data that ultimately were used to
               compose the core part of our machine learning algorithm.
             </p>
+=======
+          <p>One problem we had was making the recommendations as seamless as possible. We didn’t want cruise passengers to have to fill out a form or provide any new information. We wanted to use existing data about cruise ship passengers and find interesting and unexpected relationships between profiles about cruise ship passengers and excursions they would prefer.
+</p>
+<br/><br/>
+<h3>Our Architecture</h3>
+<p>The solution we settled on and built collected basic information through facebook and and used computer vision and natural language processing to expand that to a structured set of topics that represented items that were found in the text and image data. From those topics we then applied even more natural language processing to derive a set of categories that were matched against and used to train up a set of multinomial logistic regression models (a machine learning model that identifies patterns in data). This model was then deployed to amazon and used to power real-time predictions based on new users that started using the system.</p>
+<br/><br/>
+<h3>Excursion Data</h3>
+<p>We acquired excursion data by spidering several sources of cruise ship data online. This data was used to power to recommendations as well as help users in the survey application select responses.</p>
+<br/><br/>
+<h3>Training Data for Four Machine Learning Models</h3>
+<p>One of the very large problems we had was accumulating enough meaningful training data to make the machine learning model have any impact. Through the course of the competition we were able to collect hundreds of points of training data through a few creative means. We surveyed hundred of english speaking users from all over the world, ran our computer vision and natural language processing on their profile photo and social media data, and collected their preferences for cruise ship excursions. We used all of that data to build several iterations on four models across four dimensions of data that ultimately were used to compose the core part of our machine learning algorithm.</p>
+>>>>>>> 8f1c827246b8491912262831b34fe3125cb2f44a
 
             <br />
             <br />
