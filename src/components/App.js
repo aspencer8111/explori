@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import Home from './Home'
 
 class App extends Component {
+  constructor(){
+    super()
+    this.getCustomExcursions = this.getCustomExcursions.bind(this)
+  }
+
+  // getCustomExcursions(email, gender, profile) {
+  //   let baseUrl = 'https://cors-anywhere.herokuapp.com/http://api.explori.us/api/predictions'
+  //   fetch(`${baseUrl}?email=${email}&gender=${gender}&profile=` + 'http://graph.facebook.com/v2.6/' + profile + '/picture' + '&foo=bar')
+  //     .then(r => r.json())
+  //     .then((json) => { console.log(json) })
+  // }
+
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    )
+    return (<Home getCustomExcursions={this.getCustomExcursions}/>)
   }
 }
 
