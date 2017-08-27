@@ -5,7 +5,6 @@ import logo from '../imgs/Explorius-Logo.png'
 // import Facebook from './Facebook'
 
 export default class Home extends Component {
-
   render() {
     return (
       <div className="home">
@@ -15,6 +14,12 @@ export default class Home extends Component {
         <h4>
           LOG IN FOR YOUR <strong>CUSTOMIZED</strong> CRUISE EXPERIENCE
         </h4>
+        <div className="h3Wrapper">
+          <h3>
+            <i className="fa fa-facebook-official" aria-hidden="true" />FACEBOOK
+          </h3>
+          <h3>CRUISE</h3>
+        </div>
         <form>
           {/* <Facebook /> */}
           <Link to="/results">
