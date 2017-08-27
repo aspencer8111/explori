@@ -104,7 +104,7 @@ export default class Results extends Component {
         <div className="wrapper">
           <div className="jumbotron">
             <h1>
-              <strong>How It Works:</strong> The Basics
+              <strong>Customized</strong> Excursions
             </h1>
           </div>
           {exc}
