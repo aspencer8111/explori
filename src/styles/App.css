@@ -32,7 +32,12 @@ h4 {
 .facebook {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 2px;
+}
+
+.fa {
+  padding-left: 9px;
+  margin-top: 1px;
 }
 
 button {
