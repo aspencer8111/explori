@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import '../styles/App.css'
 import logo from '../imgs/Explorius-Logo.png'
+import facebookLogin from '../imgs/Facebook-Login-Icon.png'
+import gears from '../imgs/Analyzing-Icon.png'
+import relax from '../imgs/Relax-Icon.png'
 
 class HowItWorks extends Component {
   constructor(props) {
@@ -9,59 +12,42 @@ class HowItWorks extends Component {
 
   render() {
     return (
-      <div className="worksBox">
-        <div className="flexWrapperforWorks">
-          <img src={logo} alt="" id="logo" />
-          <h3 className="h3Works">
-            <strong>SIGN IN WITH FACEBOOK</strong>
-          </h3>
-          <p className="pWorks">
-            Before you set sail, log in with Facebook to book your journey and explore all that explorius has to offer.
-          </p>
-          <h3 className="h3Works">
-            <strong>WE CREATE CUSTOM RECOMMENDATIONS FOR YOU</strong>
-          </h3>
-          <p className="pWorks">
-            We analyze many data points to create an unforgettable stress-free vacation custom made just for you.
-          </p>
-          <h3 className="h3Works">
-            <strong>RELAX & ENJOY YOUR BEST VACATION</strong>
-          </h3>
-          <p className="pWorks">
-            We've hand selected the best excursions tailored to every individual traveler. From a well deserved siesta
-            or a spectacular sunset in Bermuda, we transform your vacation to an exclusive experience of exceptional
-            quality. We create the ultimate backdrop for the vacation of a lifetime.
-          </p>
-          {/*
-          <a href="#" id="technicalDetails">
-            TECHNICAL DETAILS
-          </a> */}
-
-          <div className="footerWrapper">
-            <div className="footer" id="howWorksFooterId">
-              <a href="howitworks" id="works">
-                HOW IT WORKS
-              </a>
-              <a href="privacy" id="privacy">
-                PRIVACY POLICY
-              </a>
+      <div className="wrapper">
+        <div className="jumbotron">
+          <h1>
+            <strong>How It Works:</strong> The Basics
+          </h1>
+        </div>
+        <div className="how-wrapper">
+          <section className="how">
+            <img src={facebookLogin} alt="" />
+            <div className="how-content-box">
+              <h3>Sign in with Facebook</h3>
+              <p>
+                Before you set sail, log in with Facebook to book your journey and explore all that explorius has to
+                offer.
+              </p>
             </div>
-          </div>
-          <div id="techDetailsButton">
-            <a id="techDetails" href="techDetails">
-              TECHNICAL DETAILS
-            </a>
-
-            {/* <button
-              id="techDetails"
-              onClick={this._submit}
-              className="facebook"
-              type="submit"
-              // name={excursion.id}
-            > */}
-            {/* TECHNICAL DETAILS
-            </button> */}
-          </div>
+          </section>
+          <section className="how">
+            <img src={gears} alt="" />
+            <div className="how-content-box">
+              <h3>We Create Custom Recommendations</h3>
+              <p>
+                We analyze many data points to create an unforgettable, stress-free vacation custom made just for you.
+              </p>
+            </div>
+          </section>
+          <section className="how">
+            <img src={relax} alt="" />
+            <div className="how-content-box">
+              <h3>Relax & Enjoy Your Best Vacation</h3>
+              <p>
+                From a well deserved siesta or a spectacular sunset in Bermuda, we transform your vacation to an
+                exclusive experience of exceptional quality.
+              </p>
+            </div>
+          </section>
         </div>
       </div>
     )

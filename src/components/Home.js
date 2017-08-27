@@ -20,36 +20,38 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className="home">
-        <img src={logo} alt="" id="logo" />
-        {/* <h2>Start Customizing Your Cruise</h2> */}
-        <h2>Book your excursions.</h2>
-        <h4>
-          LOG IN FOR YOUR <strong>CUSTOMIZED</strong> CRUISE EXPERIENCE.
-        </h4>
-        <div className="h3Wrapper">
-          <div className="facebookText">
-            <h3>
-              <i className="fa fa-facebook-official" aria-hidden="true" /> FACEBOOK
-            </h3>
+      <div className="homebody">
+        <div className="homebox">
+          {/* <img src={logo} alt="" id="logo" /> */}
+          {/* <h2>Start Customizing Your Cruise</h2> */}
+          <h2>Book your excursions.</h2>
+          <h4>
+            LOG IN FOR YOUR <strong>CUSTOMIZED</strong> CRUISE EXPERIENCE.
+          </h4>
+          <div className="h3Wrapper">
+            <div className="facebookText">
+              <h3>
+                <i className="fa fa-facebook-official" aria-hidden="true" /> FACEBOOK
+              </h3>
+            </div>
+            <div className="cruiseText">
+              <h3>
+                <i className="fa fa-ticket" aria-hidden="true" /> CRUISE
+              </h3>
+            </div>
           </div>
-          <div className="cruiseText">
-            <h3>
-              <i className="fa fa-ticket" aria-hidden="true" /> CRUISE
-            </h3>
+          <div className="footerWrapper">
+            <div className="footer">
+              <a href="howitworks" id="works">
+                HOW IT WORKS
+              </a>
+              <a href="privacy" id="privacy">
+                PRIVACY POLICY
+              </a>
+            </div>
           </div>
+          {this.state.user.email === undefined ? <Facebook setUser={this.setUser} /> : <Form />}
         </div>
-        <div className="footerWrapper">
-          <div className="footer">
-            <a href="howitworks" id="works">
-              HOW IT WORKS
-            </a>
-            <a href="privacy" id="privacy">
-              PRIVACY POLICY
-            </a>
-          </div>
-        </div>
-        {this.state.user.email === undefined ? <Facebook setUser={this.setUser} /> : <Form />}
       </div>
     )
   }
