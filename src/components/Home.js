@@ -6,16 +6,15 @@ import Facebook from './Facebook'
 import Form from './Form'
 
 export default class Home extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       user: {}
     }
   }
 
-
-  setUser = (user) => {
-    this.setState({user: user})
+  setUser = user => {
+    this.setState({ user: user })
   }
 
   render() {
@@ -39,7 +38,6 @@ export default class Home extends Component {
             </h3>
           </div>
         </div>
-<<<<<<< HEAD
         <div className="footerWrapper">
           <div className="footer">
             <a href="#" id="works">
@@ -60,9 +58,7 @@ export default class Home extends Component {
             </div>
           </Link>
         </form>
-=======
-        {Object.keys(this.state.user).length === 0 ? <Facebook setUser={this.setUser}/> : <Form />  }
->>>>>>> 64f12fd3b04adb8a15b1c8de014d3b72132064e1
+        {Object.keys(this.state.user).length === 0 ? <Facebook setUser={this.setUser} /> : <Form />}
       </div>
     )
   }

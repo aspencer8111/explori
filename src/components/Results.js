@@ -46,7 +46,9 @@ export default class Results extends Component {
         <div>
           <div key={excursion.id}>
             <h3 id="resultsH3">
-              {excursion.title}
+              <strong>
+                {excursion.title}
+              </strong>
             </h3>
             {/* <p>
               Activity Level: {excursion.activity_level}
@@ -60,24 +62,50 @@ export default class Results extends Component {
             {/* <p>
               {excursion.desc}
             </p> */}
-            <form>
-              <Link to="/info">
-                <input type="button" onClick={this._submit} value="Learn More" name={excursion.id} />
-                <input type="button" value="Book Now" />
-              </Link>
-            </form>
+            <div className="forFlexing">
+              <form className="formStyle">
+                <Link to="/info">
+                  {/* <input
+                  className="facebook"
+                  type="button"
+                  onClick={this._submit}
+                  value="Learn More"
+                  name={excursion.id}
+                /> */}
+                  {/* <input type="button" value="Book Now" /> */}
+                  <button id="learnMore" onClick={this._submit} className="facebook" type="submit" name={excursion.id}>
+                    LEARN MORE
+                  </button>
+                  <button className="bookNow" type="submit">
+                    BOOK NOW
+                  </button>
+                </Link>
+              </form>
+            </div>
           </div>
         </div>
       )
     })
     return (
-      <div className="resultsBox">
-        <h1 className="iconClass">ICON HERE</h1>
-        {/* <img src={logo} alt="" id="logo" /> */}
-        <h2 id="resultsH2">
-          Start <strong>Customizing</strong> Your Cruise
-        </h2>
-        {exc}
+      <div id="resultsWrap">
+        <div className="resultsBox">
+          <h1 className="iconClass">ICON HERE</h1>
+          {/* <img src={logo} alt="" id="logo" /> */}
+          <h2 id="resultsH2">
+            Start <strong>Customizing</strong> Your Cruise
+          </h2>
+          {exc}
+        </div>
+        <div className="footerWrapper">
+          <div className="footer">
+            <a href="#" id="works">
+              HOW IT WORKS
+            </a>
+            <a href="#" id="privacy">
+              PRIVACY POLICY
+            </a>
+          </div>
+        </div>
       </div>
     )
   }

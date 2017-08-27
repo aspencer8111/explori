@@ -173,13 +173,32 @@ button:hover {
   color: white;
 }
 
-.resultsBox {
-  display: flex;
-  flex-direction: column;
+div#resultsWrap {
   padding: 40px;
 }
 
 .iconClass {
   display: flex;
   justify-content: center;
+}
+
+strong {
+  font-weight: 700;
+}
+
+button.bookNow {
+  background-color: white;
+  border: 3px solid #00958a;
+  color: #00958a;
+  width: 11em;
+  opacity: 0.5;
+}
+
+button#learnMore {
+  width: 11em;
+}
+
+.forFlexing {
+  display: flex;
+  flex-direction: column;
 }
