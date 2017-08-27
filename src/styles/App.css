@@ -69,6 +69,18 @@ a#works {
   color: white;
 }
 
+a#technicalDetails {
+  color: white;
+  position: relative;
+  top: 78px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: flex-start;
+  margin-left: -33px;
+}
+
 .facebook {
   display: flex;
   justify-content: center;
@@ -169,10 +181,10 @@ button:hover {
 .active {
   border-bottom: 2px solid #00958a;
 }
-
+/*
 .footerWrapper {
   display: flex;
-}
+}*/
 
 .footer {
   position: relative;
@@ -200,6 +212,15 @@ strong {
 
 button#learnMore {
   width: 11em;
+}
+
+div#techDetailsButton {
+  display: flex;
+  justify-content: center;
+}
+
+button#techDetails {
+  width: 15em;
 }
 
 .forFlexing {
@@ -232,6 +253,7 @@ h3.h3Works {
   letter-spacing: 2px;
   margin-bottom: 0;
   padding-bottom: 6px;
+  padding-top: 17px;
 }
 
 form.formStyle {

@@ -32,6 +32,32 @@ class HowItWorks extends Component {
             or a spectacular sunset in Bermuda, we transform your vacation to an exclusive experience of exceptional
             quality. We create the ultimate backdrop for the vacation of a lifetime.
           </p>
+          {/*
+          <a href="#" id="technicalDetails">
+            TECHNICAL DETAILS
+          </a> */}
+
+          <div className="footerWrapper">
+            <div className="footer">
+              <a href="#" id="works">
+                HOW IT WORKS
+              </a>
+              <a href="#" id="privacy">
+                PRIVACY POLICY
+              </a>
+            </div>
+          </div>
+          <div id="techDetailsButton">
+            <button
+              id="techDetails"
+              onClick={this._submit}
+              className="facebook"
+              type="submit"
+              // name={excursion.id}
+            >
+              TECHNICAL DETAILS
+            </button>
+          </div>
         </div>
       </div>
     )
