@@ -9,8 +9,9 @@ export default class Facebook extends React.Component {
   render() {
     return (
       <FacebookLogin
-        appId="1088597931155576"
+        appId="308817092915937"
         autoLoad={true}
+        redirectUri='http://localhost:3000'
         fields="name,email,picture"
         callback={this.responseFacebook}
       />
