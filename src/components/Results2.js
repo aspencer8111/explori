@@ -35,9 +35,14 @@ export default class Results extends Component {
   }
 
   componentDidMount() {
-    fetch(url).then(res => res.json()).then(data => {
-      this.setState({ data })
-    })
+    const user = window.user
+    let data = []
+    this.props.getCustomExcursions(user.email, user.gender, user.id)
+              .then((json) => {
+                data = json;
+                console.log(data)
+                this.setState({ data })
+              })
   }
 
   render() {

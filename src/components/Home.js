@@ -15,6 +15,7 @@ export default class Home extends Component {
 
   setUser = user => {
     this.setState({ user: user })
+    Window.user = user
   }
 
   render() {
