@@ -45,6 +45,21 @@ h4 {
   font-size: 14px;
 }
 
+a {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+a#privacy {
+  margin-left: 120px;
+  color: white;
+}
+
+a#works {
+  margin-right: 120px;
+  color: white;
+}
+
 .facebook {
   display: flex;
   justify-content: center;
@@ -144,5 +159,7 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-  top: 130px;
+  top: 116px;
+  letter-spacing: 1px;
+  color: white;
 }
