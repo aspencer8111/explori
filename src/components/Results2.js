@@ -78,7 +78,7 @@ export default class Results extends Component {
                 <p className="meta">
                   <strong>Category:</strong> {excursion.categories[0]} <br />
                   <strong>Price:</strong> {this.parsePriceRange(excursion.price)} <br />
-                  <strong>Activity Level:</strong> {this.parseActivity(excursion.activity_level)} <br />
+                  <strong>Activity Level:</strong>  {this.parseActivity(excursion.activity_level)} <br />
                   <strong>Duration:</strong>
                   {this.parseDuration(excursion.duration)} <br />
                 </p>
@@ -107,6 +107,9 @@ export default class Results extends Component {
               <strong>Customized</strong> Excursions
             </h1>
           </div>
+
+          <div className="notice">👋 Hi! The results you are seeing are from a live ML model that has a very small training set. This was built rapidly and we are experimenting with the model constantly so it may break or return strange results.</div>
+
           {exc}
         </div>
       </div>
