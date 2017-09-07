@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   animation: fade 1s ease-in-out;
 }
@@ -42,6 +42,13 @@ strong {
   font-weight: 700;
 }
 
+.home-header {
+  font-weight: 700;
+  font-size: 2.3em;
+  line-height: 1em;
+  padding: 20px 0;
+}
+
 .wrapper {
   width: 95%;
   padding-top: 30px;
@@ -50,7 +57,7 @@ strong {
 header {
   background-image: url('../imgs/ocean-background-1.jpg');
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: auto;
@@ -65,11 +72,26 @@ button,
   background-color: #00958a;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   border: none;
   color: #fff;
   padding: 10px 20px;
-  font-size: .7em;
+  position: relative;
+}
+
+.facebook {
+  top: -25px;
+}
+
+.excursion-content-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.excursion-text {
+  padding-left: 50px;
 }
 
 button:hover {
@@ -79,11 +101,6 @@ button:hover {
   -o-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
   cursor: pointer;
-}
-
-.button-box {
-  width: 30%;
-  text-align: right;
 }
 
 header:before {
@@ -97,52 +114,62 @@ header:before {
   z-index: -1;
 }
 
-.logo {
-  width: 15%;
-}
-
 .nav {
-  display: flex;
-  justify-content: space-between;
   padding: 20px 30px;
+  text-align: center;
   z-index: 1;
   border-bottom: 1px solid #333;
-  align-items: center;
 }
 
 .jumbotron {
   display: flex;
-  align-items: flex-end;
   flex-direction: row;
-  height: 38vh;
   justify-content: center;
-  position: absolute;
-  top: 150px;
-  left: 240px;
 }
 
 .jumbotron h1 {
   text-align: center;
   font-size: 4em;
+  position: absolute;
+  top: 250px;
 }
 
 section {
   padding: 30px 0;
   width: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0px auto;
-  align-items: center;
+}
+
+
+
+.excursion-content-box {
+  border-bottom: 1px solid #b4b4b4;
+  padding-bottom: 50px;
 }
 
 .content-box {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.content-box h4 {
+  padding: 20px 0 10px;
+  font-weight: 600;
+}
+
+.content-box h4 , ol {
+  text-align: left;
+  margin: 0;
+}
+
+ol li {
+  padding: 0;
+  margin: 0;
 }
 
 .picture-box {
-  width: 40%;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .footer-main {
@@ -174,10 +201,6 @@ a:hover {
   transition: color 200ms ease-in-out;
 }
 
-.excursion-content-box {
-  padding: 0;
-}
-
 .excursion-content-box button {
   font-size: .8em;
   font-weight: 300;
@@ -196,32 +219,6 @@ a:hover {
 .large-pic {
   width: 300%;
 }
-
-/*.header-excursion {
-  width: 100%;
-  background-image: url('/imgs/ocean-background-1.jpg');
-  padding: 20px;
-  position: relative;
-  z-index: 0;
-  color: #fff;
-  height: 20vh;
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}*/
-
-/*.header-excursion::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: -1;
-}*/
 
 .header-excursion h3 {
   font-weight: 700;
@@ -243,6 +240,10 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.step  {
+  text-align: center;
 }
 
 button a,
@@ -269,24 +270,8 @@ button a:visited {
   width: 40%;
 }
 
-/*.how,
-.how img {
-  text-align: center;
-  margin: 0px auto;
-}*/
-
 .how img {
   width: 50%;
-}
-
-/*******************/
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
 }
 
 .homebody {
@@ -344,7 +329,7 @@ h3#resultsH3 {
 
 h4 {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a {
@@ -353,12 +338,10 @@ a {
 }
 
 a#privacy {
-  margin-left: 120px;
   color: white;
 }
 
 a#works {
-  margin-right: 120px;
   color: white;
 }
 
@@ -375,9 +358,9 @@ a#technicalDetails {
 }
 
 .facebook {
-  padding-top: 10px;
   text-align: center;
-  font-size: 1em;
+  font-size: .8em;
+  padding: 10px 20px;
 }
 
 a#techDetails {
@@ -420,27 +403,12 @@ a#techDetails:hover {
   padding-bottom: 5px;
 }
 
-/*button {
-  background-color: #00958a;
-  color: white;
-  padding: 20px 10px;
-  margin: 10px 10px;
-  border-width: 0;
-  border-radius: 40px;
-  font-weight: 600;
-  font-size: 14px;
-  text-align: center;
-  height: 50px;
-}*/
-
 button.bookNow {
   background-color: transparent;
   border: 3px solid #00958a;
-  /*color: #00958a;*/
   width: 11em;
   opacity: 0.5;
   margin-top: 9px;
-  /*only while the buttons are stacked will we need margin-top*/
 }
 
 .flexWrap {
@@ -449,12 +417,12 @@ button.bookNow {
 }
 
 .homebox {
-  margin: 20vh;
+  margin: 15vh;
   width: 35%;
   background-color: rgba(255, 255, 255, .6);
   box-shadow: 2px 2px 10px #666;
-  padding: 20px;
-  height: 43vh;
+  padding: 40px;
+  height: 50vh;
   text-align: center;
 }
 
@@ -504,10 +472,6 @@ button:hover {
 .active {
   border-bottom: 2px solid #00958a;
 }
-/*
-.footerWrapper {
-  display: flex;
-}*/
 
 .footer {
   position: relative;
@@ -515,9 +479,10 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-  top: 116px;
+  top: 80px;
   letter-spacing: 1px;
   color: white;
+  justify-content: space-between;
 }
 
 div#howWorksFooterId {
@@ -526,6 +491,11 @@ div#howWorksFooterId {
 
 div#resultsWrap {
   padding: 40px;
+}
+
+.excursionPic {
+  max-width: 50%;
+  height: 50%;
 }
 
 .iconClass {
@@ -595,6 +565,10 @@ div#privacyPage {
   padding: 40px;
 }
 
+.navLogo {
+  width: 20%;
+}
+
 #privacyFooter {
   position: relative;
   width: 100%;
@@ -609,4 +583,146 @@ div.notice {
   border: 1px solid #005852;
   border-radius: 10px;
   padding:10px;
+  width: 75%;
+  margin: 0px auto;
+}
+
+@media ( max-width: 1157px )  {
+  .home-header {
+    font-size: 2em;
+  }
+  .footer {
+    top: 90px;
+  }
+}
+
+@media ( max-width: 1042px )  {
+  .facebook {
+    top: -50px;
+  }
+  .footer {
+    top: 70px;
+  }
+}
+
+@media ( max-width: 1122px )  {
+  .facebook {
+    top: -40px;
+  }
+  .footer {
+    top: 70px;
+  }
+}
+
+@media ( max-width: 1024px )  {
+  .home-header {
+    font-size: 1.8em;
+  }
+
+  .facebook {
+    top: -30px;
+  }
+}
+
+@media ( max-width: 916px )  {
+  header {
+    height: 30vh;
+  }
+
+  .excursionPic {
+    width: 70%;
+    height: 70%;
+  }
+
+  .home-header {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  .jumbotron h1 {
+    font-size: 3em;
+    top: 120px;
+  }
+
+  .facebook {
+    top: -30px;
+  }
+
+  .excursion-content-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .excursion-text {
+    padding-left: 0;
+  }
+
+  .how-wrapper {
+    flex-direction: column;
+  }
+
+  .how {
+    width: 50%;
+  }
+
+  .how img {
+    width: 30%;
+  }
+}
+
+
+@media ( max-width: 760px )  {
+  .h3Wrapper h3 {
+    font-size: 1em;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.4em;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  #works, #privacy {
+    padding-top: 10px;
+  }
+
+  .facebook {
+    top: -58px;
+  }
+
+  .homebox {
+    width: 60%;
+  }
+
+  .footer {
+    top: 100px;
+  }
+
+  .excursionPic {
+    max-width: 90%;
+    height: 90%;
+  }
+
+}
+
+@media ( max-width: 591px )  {
+  .facebook {
+    top: -60px;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.1em;
+    top: 100px;
+  }
+
+  .navLogo {
+    width: 30%;
+  }
 }

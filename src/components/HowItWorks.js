@@ -41,7 +41,7 @@ class HowItWorks extends Component {
           <section className="how">
             <img src={relax} alt="" />
             <div className="how-content-box">
-              <h3>Relax & Enjoy Your Best Vacation</h3>
+              <h3>Relax & Enjoy Your Trip</h3>
               <p>
                 From a well deserved siesta or a spectacular sunset in Bermuda, we transform your vacation to an
                 exclusive experience of exceptional quality.

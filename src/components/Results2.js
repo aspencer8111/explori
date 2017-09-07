@@ -69,33 +69,33 @@ export default class Results extends Component {
                 id="excursionPic"
                 className="excursionPic"
               />
-              <div className="header-excursion">
-                <h3>
-                  {excursion.title}
-                </h3>
-              </div>
-              <div className="p-content">
-                <p className="meta">
-                  <strong>Category:</strong> {excursion.categories[0]} <br />
-                  <strong>Price:</strong> {this.parsePriceRange(excursion.price)} <br />
-                  <strong>Activity Level:</strong>  {this.parseActivity(excursion.activity_level)} <br />
-                  <strong>Duration:</strong>
-                  {this.parseDuration(excursion.duration)} <br />
-                </p>
-                <p>
-                  {excursion.desc}
-                </p>
-              </div>
-              <br />
-              <div className="button-box-book">
-                <button>
-                  <a href={'http://www.carnival.com/' + excursion.uri}>Book Now</a>
-                </button>
+              <div className="excursion-text">
+                <div className="header-excursion">
+                  <h3>
+                    {excursion.title}
+                  </h3>
+                </div>
+                <div className="p-content">
+                  <p className="meta">
+                    <strong>Category:</strong> {excursion.categories[0]} <br />
+                    <strong>Price:</strong> {this.parsePriceRange(excursion.price)} <br />
+                    <strong>Activity Level:</strong>  {this.parseActivity(excursion.activity_level)} <br />
+                    <strong>Duration:</strong>
+                    {this.parseDuration(excursion.duration)} <br />
+                  </p>
+                  <p>
+                    {excursion.desc}
+                  </p>
+                </div>
+                <br />
+                <div className="button-box-book">
+                  <button>
+                    <a href={'http://www.carnival.com/' + excursion.uri}>Book Now</a>
+                  </button>
+                </div>
               </div>
             </div>
           </section>
-          <br />
-          <hr />
         </div>
       )
     })

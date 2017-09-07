@@ -8,14 +8,9 @@ export default class BaseLayout extends Component {
       <div className="App">
         <header>
           <div className="nav">
-            <div className="logo-container">
               <a href="/">
-                <img src={logo} className="logo" alt="Explorius Logo" />
+                <img src={logo} className="navLogo" alt="Explorius Logo" />
               </a>
-            </div>
-            <div className="button-box">
-              <button>Let's Go</button>
-            </div>
           </div>
         </header>
         {this.props.children}
