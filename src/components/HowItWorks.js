@@ -4,6 +4,7 @@ import logo from '../imgs/Explorius-Logo.png'
 import facebookLogin from '../imgs/Facebook-Login-Icon.png'
 import gears from '../imgs/Analyzing-Icon.png'
 import relax from '../imgs/Relax-Icon.png'
+import { Link } from 'react-router-dom'
 
 class HowItWorks extends Component {
   constructor(props) {
@@ -50,9 +51,9 @@ class HowItWorks extends Component {
           </section>
         </div>
         <div className="tech-btn-box">
-          <a href="/techdetails">
+          <Link to="/techdetails">
             <button>Technical Details</button>
-          </a>
+          </Link>
         </div>
       </div>
     )
