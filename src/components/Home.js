@@ -41,12 +41,12 @@ export default class Home extends Component {
           </div>
           <div className="footerWrapper">
             <div className="footer">
-              <a href="howitworks" id="works">
+              <Link to="/howitworks" id="works">
                 HOW IT WORKS
-              </a>
-              <a href="privacy" id="privacy">
+              </Link>
+              <Link to="/privacy" id="privacy">
                 PRIVACY POLICY
-              </a>
+              </Link>
             </div>
           </div>
           {this.state.user.email === undefined ? <Facebook setUser={this.setUser} /> : <Form />}
