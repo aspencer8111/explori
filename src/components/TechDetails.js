@@ -15,12 +15,12 @@ class TechDetails extends Component {
           </h1>
         </div>
         <section className="step">
+          <h2>AI Powered Recommendations</h2>
+          <h3>Using Computer Vision and Natural Language Processing</h3>
           <div className="picture-box">
             <img src={fbpic} alt="" />
           </div>
           <div className="content-box">
-            <h2>AI Powered Recommendations</h2>
-            <h3>Using Computer Vision and Natural Language Processing</h3>
             <h4>Identified Items:</h4>
             <ol>
               <li>Mountains</li>
@@ -55,7 +55,7 @@ class TechDetails extends Component {
           </div>
         </section>
         </div>
-        
+
             )
   }
 }

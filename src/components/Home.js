@@ -23,8 +23,7 @@ export default class Home extends Component {
       <div className="homebody">
         <div className="homebox">
           <img src={logo} alt="" className="logo" />
-          {/* <h2>Start Customizing Your Cruise</h2> */}
-          <h2>Book your excursions.</h2>
+          <h1 className="home-header">Start Booking Your Excursions.</h1>
           <h4>
             LOG IN FOR YOUR <strong>CUSTOMIZED</strong> CRUISE EXPERIENCE.
           </h4>
